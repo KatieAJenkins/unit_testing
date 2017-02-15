@@ -30,8 +30,8 @@ describe('greeting', function(){
   });
 
   // output is a string
-  xit('output is a string', function () {
-    //write assertions
+  it('output is a string', function () {
+    expect(code.greeting('Katie')).to.equal('Hello, Katie');
   });
 
   //2nd argument is callback function

@@ -8,5 +8,6 @@ module.exports = {
     if(typeof name != 'string'){
       return 'Pass me a string, please!';
     }
+    return ('Hello, ' + name);
   }
 };
