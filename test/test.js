@@ -31,12 +31,13 @@ describe('greeting', function(){
 
   // output is a string
   it('output is a string', function () {
-    expect(code.greeting('Katie')).to.equal('Hello, Katie');
+    expect(code.greeting('Katie')).to.be.a('string');
   });
 
-  //2nd argument is callback function
-  xit('2nd argument is callback function', function () {
+  //output is expected string
+  it('output is expected string', function () {
     //write assertions
+    expect(code.greeting('Katie')).to.equal('Hello, Katie');
   });
 })
 
