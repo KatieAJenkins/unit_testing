@@ -2,6 +2,7 @@
 var expect = require('chai').expect;
 var code = require('../main.js');
 
+//FUNCTION: GREETING
 // Input: name, string (ex: 'Jennie')
 //
 // Output: greeting that incorporates string input (ex: 'Hello, Jennie')
@@ -12,7 +13,6 @@ var code = require('../main.js');
 // output is a string
 // output is expected string
 
-//start with describe statement with function name
 describe('greeting', function(){
 
   // accepts only one argument
@@ -41,4 +41,39 @@ describe('greeting', function(){
   });
 })
 
-//each case will be an if block --> copy psuedo code to work on one at a time
+//FUNCTION: REDUCE
+
+// Input: array of integers (ex: [3, 8, 12, 2])
+
+// Output: integer representing sum of all integers in array (ex: 25)
+
+// Test for:
+//
+// input is an array
+// input array includes only numbers
+// output is a number
+// output is a sum of all elements
+
+describe ('reduce' , function() {
+
+  // input is an array
+  it('input is an array', function(){
+
+  });
+
+  // input array includes only numbers
+  it('input array includes only numbers', function(){
+
+  });
+
+  // output is a number
+  it('output is a number', function () {
+
+  });
+
+  // output is a sum of all elements
+  it('output is a sum of all elements', function () {
+
+  });
+
+});
