@@ -19,14 +19,15 @@ describe('greeting', function(){
   it('accepts only one arguement', function () {
     expect(code.greeting('Katie' , 'Brando')).to.equal('Only one argument, fool!');
 
-    expect(code.greeting('Brando')).to.not.equal('Only one argument, fool!');
+    expect(code.greeting('Brando')).to.equal('Hello, Brando');
   });
 
   // input is a string
   it('input is a string', function () {
+    // expect(code.greeting(9)).to.be.a('string');
     expect(code.greeting(9)).to.equal('Pass me a string, please!');
 
-    expect(code.greeting('Katie')).to.not.equal('Pass me a string, please!');
+    expect(code.greeting('Katie')).to.equal('Hello, Katie');
   });
 
   // output is a string
@@ -58,21 +59,25 @@ describe ('reduce' , function() {
 
   // input is an array
   it('input is an array', function(){
+    // expect(code.reduce(7)).to.be.an('array');
+    //call function, define what you want returned
+    expect(code.reduce('Katie')).to.equal('Please pass in a array!');
 
+    // expect(code.reduce('Katie')).to.be.an('array');
   });
 
   // input array includes only numbers
-  it('input array includes only numbers', function(){
+  xit('input array includes only numbers', function(){
 
   });
 
   // output is a number
-  it('output is a number', function () {
+  xit('output is a number', function () {
 
   });
 
   // output is a sum of all elements
-  it('output is a sum of all elements', function () {
+  xit('output is a sum of all elements', function () {
 
   });
 
