@@ -63,7 +63,7 @@ describe ('reduce' , function() {
     //call function, define what you want returned
     expect(code.reduce('Katie')).to.equal('Please pass in a array!');
 
-    // expect(code.reduce('Katie')).to.be.an('array');
+    expect(code.reduce(5)).to.equal('Please pass in a array!');
   });
 
   // input array includes only numbers

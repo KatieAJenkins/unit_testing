@@ -13,7 +13,8 @@ module.exports = {
 
   reduce: function reduce(array){
     if(Array.isArray !== true ){
-      return "Please pass in a array!";
+      return 'Please pass in a array!';
     }
+
   }
 };
