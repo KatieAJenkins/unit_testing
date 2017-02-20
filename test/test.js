@@ -16,14 +16,14 @@ var code = require('../main.js');
 describe('greeting', function(){
 
   // accepts only one argument
-  it('accepts only one arguement', function () {
+  xit('accepts only one arguement', function () {
     expect(code.greeting('Katie' , 'Brando')).to.equal('Only one argument, fool!');
 
     expect(code.greeting('Brando')).to.equal('Hello, Brando');
   });
 
   // input is a string
-  it('input is a string', function () {
+  xit('input is a string', function () {
     // expect(code.greeting(9)).to.be.a('string');
     expect(code.greeting(9)).to.equal('Pass me a string, please!');
 
@@ -31,12 +31,12 @@ describe('greeting', function(){
   });
 
   // output is a string
-  it('output is a string', function () {
+  xit('output is a string', function () {
     expect(code.greeting('Katie')).to.be.a('string');
   });
 
   //output is expected string
-  it('output is expected string', function () {
+  xit('output is expected string', function () {
     //write assertions
     expect(code.greeting('Katie')).to.equal('Hello, Katie');
   });
@@ -58,7 +58,7 @@ describe('greeting', function(){
 describe ('reduce' , function() {
 
   // input is an array
-  it('input is an array', function(){
+  xit('input should be an array', function(){
     // expect(code.reduce(7)).to.be.an('array');
     //call function, define what you want returned
     expect(code.reduce('Katie')).to.equal('Please pass in a array!');
@@ -67,18 +67,18 @@ describe ('reduce' , function() {
   });
 
   // input array includes only numbers
-  xit('input array includes only numbers', function(){
-
+  xit('array should contain only numbers', function(){
+    expect(code.reduce(['Brando'])).to.equal('Array must contain numbers only');
   });
 
   // output is a number
-  xit('output is a number', function () {
-
+  xit('output should be a number', function () {
+    expect(code.reduce([1, 3, 6])).to.be.a('number');
   });
 
   // output is a sum of all elements
-  xit('output is a sum of all elements', function () {
-
+  it('output is a sum of all elements', function () {
+    expect(code.reduce([1, 3, 6])).to.equal(10);
   });
 
 });
